@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Stall</title>
+    <style>
+        label{display: block;
+        margin-bottom: 10px;}
+    </style>
+    <link rel="stylesheet" href="styles/nav.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="form.html">Form</a></li>
+                <li><a href="table.html">Table</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Please fill up the form</h2>
+            <form>
+                <label for="name"> Name:
+                    <input id="name" type="text" placeholder="Your Name">
+                </label>
+                <label for="email"> Email Address:
+                    <input id="email" type="email" placeholder="Your Mail">
+                </label>
+                <fieldset>
+                    <legend>Pick a food</legend>
+                    <label for="burger">
+                        <input type="radio" name="food" id="burger">Burger
+                    </label>
+                    <label for="pizza">
+                        <input type="radio" name="food" id="pizza">Pizza
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Pick the type of food</legend>
+                    <label for="chicken burger">
+                        <input type="checkbox" name="flavour" id="chicken burger">Chicken Burger
+                    </label>
+                    <label for="beef burger">
+                        <input type="checkbox" name="flavour" id="beef burger">Beef Burger
+                    </label>
+                    <label for="chicken pizza">
+                        <input type="checkbox" name="flavour" id="chicken pizza">Chicken Pizza
+                    </label>
+                    <label for="beef pizza">
+                        <input type="checkbox" name="flavour" id="beef pizza">Beef Pizza
+                    </label>
+                </fieldset>
+                <fieldset>
+                    <legend>Special Instructions</legend>
+                    <textarea name="" id="" cols="30" rows="5"></textarea>
+                </fieldset>
+                <fieldset>
+                    <input type="reset" value="Reset">
+                    <input type="submit" value="Submit">
+                </fieldset>
+            
+            </form>
+        </section>
+
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
