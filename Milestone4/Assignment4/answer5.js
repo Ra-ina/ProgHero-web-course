@@ -5,8 +5,8 @@ function monthlySavings(arr, livingCost) {
     let totalPay = 0;
     for (const payment of arr) {
         if (payment >= 3000) {
-            newPay = payment - (payment * 0.2);
-            totalPay = newPay + payment;
+            let newPay = payment - (payment * 0.2);
+            totalPay = newPay + totalPay;
         }
         else {
             totalPay = totalPay + payment;
@@ -19,8 +19,9 @@ function monthlySavings(arr, livingCost) {
         return "earn more";
     }
 }
-const totalCalc = monthlySavings([1000, 2000, 3000], 5400);
+// const totalCalc = monthlySavings([1000, 2000, 3000], 5400);
 // const totalCalc = monthlySavings([ 1000 , 2000 , 2500 ] , 5000);
 // const totalCalc = monthlySavings([ 900 , 2700 , 3400],10000);
 // const totalCalc = monthlySavings(100, [ 900 , 2700 , 3400]);
+const totalCalc = monthlySavings([1000,9000,7700], 3400);
 console.log(totalCalc);
